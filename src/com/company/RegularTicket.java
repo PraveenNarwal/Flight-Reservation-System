@@ -1,7 +1,12 @@
 package com.company;
 
-public class RegularTicket {
+public class RegularTicket extends Ticket {
     public  String  specialServices;
+
+
+    public RegularTicket(){
+
+    }
 
     public  String getSpecialServices(){
         return  "special services";

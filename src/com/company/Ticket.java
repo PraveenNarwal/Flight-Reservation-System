@@ -1,6 +1,6 @@
 package com.company;
 
-public class Ticket {
+abstract class Ticket {
     public  String pnr,from,to,departureDateTime,arrivalDateTime,seatNo;
     public  Flight flight;
     public  Passenger passenger;

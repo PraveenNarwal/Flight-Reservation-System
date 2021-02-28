@@ -1,8 +1,12 @@
 package com.company;
 
-public class TouristTicket {
-    public  String hotelAddress;
+public class TouristTicket extends  Ticket {
+    private String hotelAddress;
     public  String [] selectedTouristLocation;
+
+    public TouristTicket(){
+
+    }
 
 
     public  String getHotelAddress(){
