@@ -7,10 +7,18 @@ abstract class Ticket {
     public  float price;
     public  boolean cancelled;
 
-    public  Ticket (){
-
+    public Ticket(String pnr, String from, String to, String departureDateTime, String arrivalDateTime, String seatNo, Flight flight, Passenger passenger, float price, boolean cancelled) {
+        this.pnr = pnr;
+        this.from = from;
+        this.to = to;
+        this.departureDateTime = departureDateTime;
+        this.arrivalDateTime = arrivalDateTime;
+        this.seatNo = seatNo;
+        this.flight = flight;
+        this.passenger = passenger;
+        this.price = price;
+        this.cancelled = cancelled;
     }
-
 
     public  String checkStatus(){
         return "check status in ticket class";
