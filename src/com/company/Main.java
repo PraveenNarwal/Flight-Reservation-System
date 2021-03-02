@@ -15,12 +15,7 @@ public class Main {
 
 
     public static void printTicketDetails(Ticket ticket) {
-//        if (ticket instanceof RegularTicket) {
-//            RegularTicket regularTicket = (RegularTicket) ticket;
-//
-//        } else {
-//            TouristTicket touristTicket = (TouristTicket) ticket;
-//        }
+
         System.out.println("Pnr no is   " + ticket.pnr);
     }
 

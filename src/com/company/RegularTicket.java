@@ -9,11 +9,7 @@ public class RegularTicket extends Ticket {
     }
 
 
-//    public RegularTicket(Flight flight, String specialServices){
-//        super(flight);
-//        this.specialServices = specialServices;
-//
-//    }
+
 
     public String getSpecialServices() {
         return specialServices;

@@ -25,12 +25,7 @@ public class TouristTicket extends  Ticket {
 
     }
 
-//    public  void  removeTouristLocations(String  location){
-//        selectedTouristLocation[Integer.parseInt(location)] = ;
-//    }
-//    public  void  addTouristLocations(String location){
-//
-//    }
+
 
 
 }
