@@ -2,32 +2,35 @@ package com.company;
 
 public class Passenger {
     public int id;
-    public Address address;
-    public Contact contact;
+    private Address address;
+    private Contact contact;
+    private  int passengerCount;
     private static int idCounter = 0;
-
+    //get method to access the private instance
     public Address getAddress() {
         return address;
     }
-
+    //get method to access the private instance
     public Contact getContact() {
         return contact;
     }
 
+//    constructor of passenger class
     public Passenger(int id, String street, String city, String state, String name, String phone, String email) {
         this.id = id;
         this.address = new Address(street, city, state);
         this.contact = new Contact(name, phone, email);
         idCounter++;
     }
-
+    //get method to access the private instance
     public int getPassengerCount() {
         return idCounter;
     }
 
-    private static class Contact {
+    private static class Contact {                    //nested class of contact
         public String name, phone, email;
-
+        private  String contactDetails;
+        //    constructor of contact class
         public Contact(String name, String phone, String email) {
             this.name = name;
             this.phone = phone;
@@ -35,7 +38,7 @@ public class Passenger {
         }
 
         public String getContactDetails() {
-            return "contact detail in contact classs";
+            return contactDetails;
 
         }
 
@@ -44,9 +47,10 @@ public class Passenger {
         }
     }
 
-    private static class Address {
-        public String street, city, state;
-
+    private static class Address {                                  // nested class of address
+        private String street, city, state;
+        private String addressDetails;
+//  set method used to modified the value
         public void setStreet(String street) {
             this.street = street;
         }

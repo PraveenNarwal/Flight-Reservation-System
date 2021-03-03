@@ -1,9 +1,11 @@
 package com.company;
 
 public class Flight {
-    public  String flightNumber,airline;
-    public  int capacity;
+    private String flightNumber;
+    private String airline;
+    private int capacity;
     private int bookedSeats;
+    private String flightDetails;
 
     public Flight(String flightNumber, String airline, int capacity, int bookedSeats) {
         this.flightNumber = flightNumber;
@@ -29,13 +31,13 @@ public class Flight {
     }
 
     public String getFlightDetails(){
-        return  "flight details in flight class";
+        return  flightDetails;
 
     }
     public  boolean checkAvailability(){
         return true;
-
     }
+
     public void  incrementBookingCounter(){
 
     }
